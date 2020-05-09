@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row h-50 d-inline-block"></div>
+
+        <div class="row">
+          <div class="col-md-4 col-lg-6 text-center" >
+            <div class="pwdform">
+                <h2>Password Generator</h2>
+                </br>
+                        
+                  <br>
+                  <button class="btn btn-primary" type="submit" id="generate">Generate Password</button>
+                  <br>
+                  <br>
+                  
+                  <div class="form-group">
+                    <label for="displaynewpwd"><b>Your New Password:</b></label>
+                    <textarea class="form-control" id="displaypwd" rows="4" placeholder="Password will be display here"></textarea>
+                  </div>
+
+                  <div>
+                    <button onclick="copyFunction()">Copy</button>
+                  </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+
+    
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
