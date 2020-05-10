@@ -1,3 +1,5 @@
+// Inspiration for logic found here - https://github.com/evcarone/password-generator/blob/master/script.js
+
 
 var pwdLength
 var numeric
@@ -42,18 +44,10 @@ function pwdCriteria () {
 var pwdChars = [];
 
 function selectPwdchars() {
-  
-    if (upperCase == true)
-    pwdChars = pwdChars.concat(upperOptions);
-   
-    if (lowerCase == true) 
-    pwdChars = pwdChars.concat(lowerOptions);
-    
-    if (numeric == true) 
-    pwdChars = pwdChars.concat(numericOptions);
-   
-    if (specialChar == true)
-    pwdChars = pwdChars.concat(specialcharOptions);
+    if (upperCase == true) pwdChars = pwdChars.concat(upperOptions);
+    if (lowerCase == true) pwdChars = pwdChars.concat(lowerOptions);
+    if (numeric == true) pwdChars = pwdChars.concat(numericOptions);
+    if (specialChar == true) pwdChars = pwdChars.concat(specialcharOptions);
     
     //test code
         console.log(pwdChars);
